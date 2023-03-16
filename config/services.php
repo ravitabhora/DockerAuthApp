@@ -21,9 +21,9 @@ return [
         'scheme' => 'https',
     ],
     'google' => [
-        'client_id' => env('GOOGLE_CLIENT_ID'),
-        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => env('GOOGLE_REDIRECT'),
+        'client_id' => env('GOOGLE_CLIENT_ID', '1007985231541-g28os9ecnqbsbae8vukncr67jtb31tcu.apps.googleusercontent.com'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET', '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'),
+        'redirect' => env('GOOGLE_REDIRECT', 'http://localhost/login/google/callback'),
     ],
 
     'postmark' => [
