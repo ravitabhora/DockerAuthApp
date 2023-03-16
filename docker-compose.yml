@@ -6,5 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
+    environment:
+      - "GOOGLE_CLIENT_ID=1007985231541-g28os9ecnqbsbae8vukncr67jtb31tcu.apps.googleusercontent.com"
+      - "GOOGLE_CLIENT_SECRET=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"
+      - "GOOGLE_REDIRECT=http://localhost/login/google/callback"
     volumes:
       - .:/var/www/html
